@@ -1,0 +1,110 @@
+{% extends "hotel/index.html" %}
+
+{% block title %} Customer Home {% endblock  %}  
+
+{% load static %}
+
+{% block content %}
+
+    <div class="p-5 text-white" style="background-image: url('{% static 'images/bg.jpg' %}'); background-size: cover; width:100%; min-height: 100vh;">
+        <h2 class="mb-4 text-center fw-bold" style="color : #722F37;">Customer Home</h2>
+        <h3 class="mt-5 text-center" style="color : #722F37;">Menu & Pricing</h3>
+
+        <hr>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h4 class="text-center" style="color : #483C32;">🌿 Veg Dishes</h4>
+                    <ul class="list-unstyled mt-3">
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="{% static 'images/butterpanner.png' %}" class="rounded-circle me-3" width="80" height="80" alt="Paneer">
+                            
+                            <div>
+                                <div class="fw-bold" style="color : #CD5C5C;"> Paneer Butter Masala</div>
+                                <div style="color: brown;">₹500</div>
+                            </div>
+
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="{% static 'images/vegbiryani.png' %}" class="rounded-circle me-3" width="80" height="80" alt="Veg Biryani">
+                            
+                            <div>
+                                <div class="fw-bold" style="color : #CD5C5C;">Veg Biryani</div>
+                                <div style="color: brown;">₹1000</div>
+                            </div>
+
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="{% static 'images/vegetableCurry.png' %}" class="rounded-circle me-3" width="80" height="80" alt="Mix Veg">
+
+                            <div>
+                                <div class="fw-bold" style="color : #CD5C5C;">Mix Veg Curry</div>
+                                <div style="color: brown;">₹1000</div>
+                            </div>
+
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="{% static 'images/Daltadka.png' %}" class="rounded-circle me-3" width="80" height="80" alt="Dal">
+
+                            <div>
+                                <div class="fw-bold" style="color : #CD5C5C;">Dal Tadka</div>
+                                <div style="color: brown;">₹1000</div>
+                            </div>
+
+                        </li>
+                    </ul>
+                
+            </div>
+
+            <div class="col-md-6">
+                <h4 class="text-center" style="color : #483C32;">🍗 Non-Veg Dishes</h4>
+
+
+                <ul class="list-unstyled mt-3">
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="{% static 'images/ChickenLolipop.png' %}" class="rounded-circle me-3" width="80" height="80" alt="Paneer">
+                            
+                            <div>
+                                <div class="fw-bold" style="color : #CD5C5C;">Chicken Lolipop</div>
+                                <div style="color: brown;">₹500</div>
+                            </div>
+
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="{% static 'images/ChickenMasala.png' %}" class="rounded-circle me-3" width="80" height="80" alt="Veg Biryani">
+                            
+                            <div>
+                                <div class="fw-bold" style="color : #CD5C5C;">Chicken Masala</div>
+                                <div style="color: brown;">₹3000</div>
+                            </div>
+
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="{% static 'images/FishCurry.png' %}" class="rounded-circle me-3" width="80" height="80" alt="Mix Veg">
+
+                            <div>
+                                <div class="fw-bold" style="color : #CD5C5C;">Fish Curry</div>
+                                <div style="color: brown;">₹1000</div>
+                            </div>
+
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="{% static 'images/MuttonMasala.png' %}" class="rounded-circle me-3" width="80" height="80" alt="Dal">
+
+                            <div>
+                                <div class="fw-bold" style="color : #CD5C5C;">Mutton Masala</div>
+                                <div style="color: brown;">₹2500</div>
+                            </div>
+
+                        </li>
+                    </ul>
+
+            </div>
+ 
+        </div>
+
+
+    </div>
+
+{% endblock  %}
+
